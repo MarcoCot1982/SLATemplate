@@ -1,0 +1,25 @@
+'***********************************
+'** Author: Marco Cot DAS:A669714 **
+'***********************************
+'*
+'* InputBox for ASA seconds threshold
+'* Target cell is then converted from ss to h:mm:ss
+'* GLOBAL
+'*
+
+
+Sub ASApct(Optional HideMe As String)
+'
+' ASApct Macro
+'
+
+'
+Line1:
+ActiveSheet.Range("K2") = InputBox("Enter number of seconds", "SET ASA THRESHOLD")
+    If Range("K2") = "" Then
+        MsgBox "Please enter data", vbCritical + vbOKOnly, "Error"
+        GoTo Line1
+        Else
+    MsgBox "ASA 95% within " & Range("K2") & """" + VbMsgBoxCenter
+    End If
+End Sub
