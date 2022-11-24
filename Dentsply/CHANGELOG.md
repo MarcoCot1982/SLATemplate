@@ -6,5 +6,5 @@ Initial version
 v1.2-1.3-1.4
 Corrections on demand
 
-v1.5
+v1.5 [2022-11-24]
 ADDED French queue
